@@ -1,0 +1,15 @@
+{
+  "name": "Rohit Kumar - Portfolio",
+  "short_name": "RK Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090B",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "/alien.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rohit Kumar - Full Stack Developer specializing in React, Node.js, and scalable web architecture. Based in Noida, India. Open to remote opportunities.">
+    <meta property="og:title" content="Rohit Kumar | Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer building high-performance web apps and immersive digital experiences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://roul-max.vercel.app">
+    <meta property="og:image" content="https://roul-max.vercel.app/profile.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rohit Kumar | Full Stack Developer">
+    <meta name="twitter:description" content="Recruiter-focused portfolio for Rohit Kumar, Full Stack Developer.">
+    <meta name="twitter:image" content="https://roul-max.vercel.app/profile.jpeg">
+    <meta name="theme-color" content="#f8fafc">
+    <link rel="canonical" href="https://roul-max.vercel.app">
+    <link rel="icon" href="alien.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Rohit Kumar - Full Stack Developer</title>
+    <script>
+      const savedTheme = localStorage.theme
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      const shouldUseDark = savedTheme ? savedTheme === 'dark' : prefersDark
+      document.documentElement.classList.toggle('dark', shouldUseDark)
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', shouldUseDark ? '#0A0A0A' : '#f8fafc')
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rohit Kumar",
+        "jobTitle": "Full Stack Developer",
+        "url": "https://roul-max.vercel.app",
+        "email": "mailto:rohitkumarrrx@gmail.com",
+        "sameAs": [
+          "https://github.com/Roul-max",
+          "http://www.linkedin.com/in/roul-max",
+          "https://www.instagram.com/luv_roul"
+        ],
+        "knowsAbout": ["React", "Node.js", "TypeScript", "MongoDB", "PostgreSQL", "REST APIs"]
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+      .scroll-mt-navbar { scroll-margin-top: 104px; }
+      ::selection { background: #7C3AED; color: white; }
+    </style>
+  </head>
+  <body class="bg-slate-50 dark:bg-[#0A0A0A] text-zinc-900 dark:text-slate-100 antialiased">
+    <div class="noise-overlay"></div>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
