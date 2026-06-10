@@ -30,7 +30,6 @@ const ProjectCard = React.forwardRef<HTMLElement, ProjectCardProps>(({ project, 
 
   return (
   <motion.article
-      layout
       ref={ref}
       data-cursor="hover"
       initial={{ opacity: 0, y: 20 }}
@@ -158,10 +157,10 @@ const Projects: React.FC<ProjectsProps> = ({ recruiterMode = false }) => {
           </div>
         </div>
 
-        <motion.div layout className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <motion.div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, index) => (
-              <ProjectCard key={project.id} project={project} onOpen={modal.openModal} recruiterMode={recruiterMode} className={index >= visibleCount ? 'hidden md:flex' : ''} />
+              <ProjectCard key={project.id} project={project} onOpen={modal.openModal} recruiterMode={recruiterMode} className={index >= visibleCount ? 'max-md:hidden' : ''} />
             ))}
           </AnimatePresence>
         </motion.div>
@@ -173,7 +172,7 @@ const Projects: React.FC<ProjectsProps> = ({ recruiterMode = false }) => {
               onClick={() => setVisibleCount((prev) => prev + 3)}
               className="inline-flex items-center justify-center rounded-full border border-zinc-200 bg-white px-6 py-3 text-sm font-semibold text-zinc-700 shadow-sm transition-colors hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700 dark:border-white/[0.08] dark:bg-[#111111] dark:text-white dark:hover:bg-white/[0.06]"
             >
-              See more projects
+              Show more projects
             </button>
           </motion.div>
         )}

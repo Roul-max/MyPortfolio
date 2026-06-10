@@ -51,8 +51,8 @@ const Home: React.FC = () => {
             Crafting high-performance web applications and immersive digital experiences with React, Node.js, and TypeScript. Based in Noida, India, available for full-time roles and project work.
           </p>
 
-          <div className="mt-8 flex flex-col justify-center gap-3 min-[420px]:flex-row min-[420px]:flex-wrap lg:justify-start">
-            <motion.a whileHover={{ y: -2, scale: 1.01 }} whileTap={{ scale: 0.98 }} href="#projects" data-cursor="hover" className="inline-flex items-center justify-center gap-2 rounded-xl bg-violet-600 px-6 py-3 text-[14.5px] font-semibold tracking-[-0.01em] text-white shadow-lg shadow-violet-500/25 transition-all hover:bg-violet-700 hover:shadow-xl hover:shadow-violet-500/35 dark:bg-violet-500 dark:hover:bg-violet-600">
+          <div className="mt-8 flex flex-col justify-center gap-4 min-[420px]:flex-row min-[420px]:flex-wrap lg:justify-start">
+            <motion.a whileHover={{ y: -2, scale: 1.01 }} whileTap={{ scale: 0.98 }} href="#projects" data-cursor="hover" className="inline-flex items-center justify-center gap-2 rounded-xl bg-violet-600 px-6 py-3 text-[14.5px] font-semibold tracking-[-0.01em] text-white shadow-sm shadow-violet-500/5 transition-all hover:bg-violet-700 hover:shadow hover:shadow-violet-500/10 sm:shadow-lg sm:shadow-violet-500/25 sm:hover:shadow-xl sm:hover:shadow-violet-500/35 dark:bg-violet-500 dark:hover:bg-violet-600">
               View My Work
               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </motion.a>
