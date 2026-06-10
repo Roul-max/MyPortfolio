@@ -72,7 +72,6 @@ const ProjectCard = React.forwardRef<HTMLElement, ProjectCardProps>(({ project, 
         {([
           ['Problem', story.problem],
           ['Solution', story.solution],
-          ['Impact', story.impact],
         ] as const).map(([label, value]) => (
           <div key={label} className="rounded-xl border border-zinc-200 bg-zinc-50 p-3 dark:border-white/[0.06] dark:bg-white/[0.03]">
             <p className="font-mono text-[9px] uppercase tracking-[0.16em] text-[#7C3AED]">{label}</p>
