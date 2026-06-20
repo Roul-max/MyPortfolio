@@ -76,7 +76,9 @@ export const ProjectModal: React.FC<{ project: Project | null; onClose: () => vo
               <h3 id="project-modal-title" className="font-display text-[28px] font-extrabold text-zinc-900 dark:text-white">
                 {project.title}
               </h3>
-              <p className="mt-4 max-w-3xl text-[15px] leading-[1.75] text-zinc-500 dark:text-[#71717A]">{project.description}</p>
+              <div className="mt-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-4 dark:border-white/[0.07] dark:bg-white/[0.03]">
+                <p className="max-w-3xl text-[15px] leading-[1.75] text-zinc-600 dark:text-[#A1A1AA]">{project.description}</p>
+              </div>
               <div className="mt-6 flex flex-wrap gap-2">
                 {project.tech.map((tech) => (
                   <span key={tech} className="rounded-md bg-zinc-100 px-2.5 py-1 font-mono text-[10px] text-zinc-600 dark:bg-white/[0.06] dark:text-[#A1A1AA]">
@@ -86,8 +88,8 @@ export const ProjectModal: React.FC<{ project: Project | null; onClose: () => vo
               </div>
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 {[
-                  ['Problem', 'Users need a focused, reliable workflow instead of scattered manual steps.'],
-                  ['Solution', project.description],
+                  ['Problem', project.problem],
+                  ['Solution', project.solution],
                   ['Architecture', 'React frontend, API layer, backend services, and database-driven persistence.'],
                   ['Impact', project.impact],
                 ].map(([title, text]) => (
