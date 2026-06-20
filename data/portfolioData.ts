@@ -243,7 +243,7 @@ export const education: EducationItem[] = [
     highlights: ['Advanced Data Structures', 'Applied Machine Learning', 'Modern Web Engineering']
   },
   {
-    degree: 'I.Sc (PCM)',
+    degree: 'Secondary Education I.Sc (PCM)',
     specialization: 'CGPA: 7.6/10',
     institution: 'Park Mount Public School, Patna',
     period: 'May 2019 - June 2021',
