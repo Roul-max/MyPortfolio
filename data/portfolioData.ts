@@ -129,21 +129,6 @@ export const skills: SkillGroup[] = [
 
 export const projects: Project[] = [
   {
-    id: 9,
-    title: 'Invoice & GST Calculator',
-    category: 'Finance / Business Tool',
-    filterCategory: 'web',
-    featured: true,
-    description: 'A professional Invoice & GST Calculator built for freelancers, students, and small businesses to generate invoices instantly while automatically calculating CGST, SGST, and IGST taxes.',
-    problem: 'Creating GST-compliant invoices manually is time-consuming and error-prone for freelancers and small businesses.',
-    solution: 'Built a responsive Next.js application that automates invoice creation, tax calculations, invoice previews, and printing while supporting Indian GST workflows.',
-    tech: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS', 'Vercel'],
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&auto=format&fit=crop',
-    github: 'https://github.com/Roul-max/GST',
-    live: 'https://gst-phi-blue.vercel.app/',
-    impact: 'Simplified GST invoice generation through real-time tax calculations, printable invoices, and an intuitive user experience.'
-  },
-  {
     id: 8,
     title: 'Gharpayy - PG SaaS Platform',
     category: 'SaaS / PG Management',
